@@ -22,7 +22,7 @@ int main(int argc, char* argv[]) {
   
   unsigned int hash = BKDRHash(str, strlen(str));
   
-  //printf("%x\n", hash);
+  printf("%x\n", hash);
   
   if (hash == 0xbd9282b2)
 		printf("You win!\n");

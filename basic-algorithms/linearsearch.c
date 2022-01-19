@@ -1,4 +1,6 @@
 #include<stdio.h>
+#include<stdlib.h>
+
 int main(int argc, char* argv[]){
     if (argc < 12) return 1;
     int a[10],i,m,c=0;
@@ -14,8 +16,8 @@ int main(int argc, char* argv[]){
 //    printf("Enter the number to be search: ");
 //    scanf("%d",&m);
     for(i=1;i<argc-1;i++)
-        a[i-1] = argv[i][0];
-    m = argv[argc-1][0];
+        a[i-1] = atoi(argv[i]);
+    m = atoi(argv[argc-1]);
 
     for(i=0;i<=argc-2;i++){
          if(a[i]==m){

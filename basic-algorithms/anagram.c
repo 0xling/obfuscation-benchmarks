@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
  
 int check_anagram(char [], char []);
 char *rand_string(char *, size_t);
@@ -12,9 +11,8 @@ int main(int argc, char* argv[])
    char* a = argv[1];// = "tqzrwpalcjviqqpdqvzfbttoy";
    char* b = argv[2];//"dt12btmwtlberxblrvotkeotvxg";
    int flag;
-   time_t t;
  
-    srand((unsigned) time(&t)); // seed rand()
+   srand(0);
 //   printf("Enter first string\n");
 //   gets(a);
 //    rand_string(a, length);

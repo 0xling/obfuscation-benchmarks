@@ -21,7 +21,7 @@ int main(int argc, char* argv[]) {
   
   unsigned int hash = SDBMHash(str, strlen(str));
   
-  //printf("%x\n", hash);
+  printf("%x\n", hash);
   
   if (hash == 0x89dcd66e)
 		printf("You win!\n");

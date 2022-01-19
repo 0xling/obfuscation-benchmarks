@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdio.h>
 
 void stringConcat(char[],char[]);
 int main(int argc, char* argv[]){

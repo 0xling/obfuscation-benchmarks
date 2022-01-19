@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 int main(int argc, char* argv[]){
 
   int temp,i,j,a[10];//={36,15,79,48,46,36,37,18,28,27};
@@ -8,7 +9,7 @@ int main(int argc, char* argv[]){
 
 //  printf("Enter %d elements: ",s);
   for(i=1;i<argc;i++){
-      a[i-1] = argv[i][0];
+      a[i-1] = atoi(argv[i]);
 }
 //      scanf("%d",&a[i]);
   //Bubble sorting algorithm

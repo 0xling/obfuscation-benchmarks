@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 
 int main(int argc, char* argv[])
 {
@@ -8,9 +7,8 @@ int main(int argc, char* argv[])
     int i,j,rows;
 //    printf("Enter the number of rows: ");
 //    scanf("%d",&rows);
-    time_t t;
-    srand((unsigned) time(&t)); // seed rand()
-    rows = argv[1][0];//6;//rand() % 10;
+    srand(0);
+    rows = atoi(argv[1]);//6;//rand() % 10;
 
     for(i=1;i<=rows;++i)
     {

@@ -5,8 +5,8 @@ int main(int argc, char* argv[]) {
 	int i,j;
 	int sum = 0;
 	
-	for (i = 0; i < argv[1][0]; i++) {
-		for (j = 0; j < argv[1][0]; j++) {
+	for (i = 0; i < atoi(argv[1]); i++) {
+		for (j = 0; j < atoi(argv[1]); j++) {
 			sum += j; 
 		} 
 	}

@@ -2,13 +2,12 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 
 int main(int argc, char* argv[])
 {
   if (argc < 2) return 1;
   int n, reverse=0, rem,temp;
-  n = argv[1][0];
+  n = atoi(argv[1]);
 
   temp=n;
   while(temp!=0)

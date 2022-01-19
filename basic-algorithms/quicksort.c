@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 void quicksort(int [10],int,int);
 
@@ -13,12 +14,12 @@ int main(int argc, char* argv[]){
 //  for(i=0;i<size;i++)
 //    scanf("%d",&x[i]);
   for (i=1;i<argc;i++)
-     x[i-1] = argv[i][0];
+     x[i-1] = atoi(argv[i]);
 
   quicksort(x,0,argc-2);
 
   printf("Sorted elements: ");
-  for(i=0;i<argc-2;i++)
+  for(i=0;i<argc-1;i++)
     printf(" %d",x[i]);
 
   return 0;

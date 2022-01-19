@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 int main(int argc, char* argv[]){
   
@@ -8,7 +9,7 @@ int main(int argc, char* argv[]){
 
 //  printf("Enter any decimal number: ");
 //  scanf("%ld",&decimalNumber);
-  decimalNumber = (int) argv[1][0];
+  decimalNumber = atol(argv[1]);
 
   quotient = decimalNumber;
 
@@ -17,7 +18,7 @@ int main(int argc, char* argv[]){
       quotient = quotient / 8;
   }
 
-  printf("Equivalent octal value of decimal number %d: \n",decimalNumber);
+  printf("Equivalent octal value of decimal number %ld: \n",decimalNumber);
   for(j = i -1 ;j> 0;j--)
       printf("%d",octalNumber[j]);
 

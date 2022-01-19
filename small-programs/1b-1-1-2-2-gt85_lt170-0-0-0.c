@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main(int argc, char* argv[]) {
-	unsigned char c = argv[1][0];
+	unsigned char c = atoi(argv[1]);
 	
 	if (c > 85)
 		printf("if-1-win ");

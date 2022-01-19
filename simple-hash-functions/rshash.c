@@ -24,7 +24,7 @@ int main(int argc, char* argv[]) {
   
   unsigned int hash = RSHash(str, strlen(str));
   
-  //printf("%x\n", hash);
+  printf("%x\n", hash);
   
   if (hash == 0x4d248f4a)
 		printf("You win!\n");

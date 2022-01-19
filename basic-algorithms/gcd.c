@@ -1,7 +1,6 @@
 /* C Program to Find Highest Common Factor. */
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 
 int main(int argc, char* argv[])
 {
@@ -9,10 +8,9 @@ int main(int argc, char* argv[])
     int num1, num2, i, hcf;
     //printf("Enter two integers: ");
     //scanf("%d %d", &num1, &num2);
-   time_t t;
-   srand((unsigned) time(&t)); // seed rand()
-   num1 = argv[1][0];//50;//rand() % 50;
-   num2 = argv[2][0];//44;//rand() % 50;
+   srand(0);
+   num1 = atoi(argv[1]);//50;//rand() % 50;
+   num2 = atoi(argv[2]);//44;//rand() % 50;
 
     for(i=1; i<=num1 || i<=num2; ++i)
     {

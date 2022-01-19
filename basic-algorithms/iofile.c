@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>  /* For exit() function */
-#include <time.h>
 
 char *rand_string(char*, size_t);
 
@@ -16,8 +15,7 @@ int main(int argc, char* argv[])
    }
 //   printf("Enter a sentence:\n");
 //   gets(c);
-   time_t t;
-   srand((unsigned) time(&t));
+   srand(0);
 //   rand_string(c, 25);
    fprintf(wfile,"%s",c);
    fclose(wfile);

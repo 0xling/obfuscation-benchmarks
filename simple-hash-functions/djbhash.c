@@ -21,7 +21,7 @@ int main(int argc, char* argv[]) {
   
   unsigned int hash = DJBHash(str, strlen(str));
   
-  //printf("%x\n", hash);
+  printf("%x\n", hash);
   
   if (hash == 0x49a54935)
 		printf("You win!\n");

@@ -5,7 +5,7 @@ int main(int argc, char* argv[]) {
 	int i;
 	int sum = 0;
 	
-	for (i = 0; i < argv[1][0]; i++)
+	for (i = 0; i < atoi(argv[1]); i++)
 		sum += i;
 	
 	if (sum > 8128)

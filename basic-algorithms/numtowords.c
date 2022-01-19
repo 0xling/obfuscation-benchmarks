@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 int main(int argc, char* argv[]){
 
@@ -8,7 +9,7 @@ int main(int argc, char* argv[]){
 
 //    printf("Enter any integer: ");
 //    scanf("%d",&number);
-    number = argv[1][0];
+    number = atoi(argv[1]);
 
     while(number){
 

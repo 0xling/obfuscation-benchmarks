@@ -5,7 +5,7 @@ int main(int argc, char* argv[]) {
 	int i;
 	int sum = 0;
 	
-	if (argv[1][0] > 127) {
+	if (atoi(argv[1]) > 127) {
 		sum += 1;
 	}
 	

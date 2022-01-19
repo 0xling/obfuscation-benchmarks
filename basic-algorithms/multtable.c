@@ -1,7 +1,6 @@
 /* C program to find multiplication table up to 10. */
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 
 int main(int argc, char* argv[])
 {
@@ -9,9 +8,8 @@ int main(int argc, char* argv[])
     int n, i;
 //    printf("Enter an integer to find multiplication table: ");
 //    scanf("%d",&n);
-    time_t t;
-    srand((unsigned) time(&t)); // seed rand()
-    n = argv[1][0];//4;//rand() % 50;
+    srand(0);
+    n = atoi(argv[1]);//4;//rand() % 50;
 
     for(i=1;i<=10;++i)
     {

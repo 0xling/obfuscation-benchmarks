@@ -31,7 +31,7 @@ int main(int argc, char* argv[]) {
   
   unsigned int hash = PJWHash(str, strlen(str));
   
-  //printf("%x\n", hash);
+  printf("%x\n", hash);
   
   if (hash == 0xaf9bec9)
 		printf("You win!\n");

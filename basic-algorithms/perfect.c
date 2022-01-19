@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 int main(int argc, char* argv[]){
   if (argc < 2) return 1;
@@ -6,7 +7,7 @@ int main(int argc, char* argv[]){
 
 //  printf("Enter a number: ");
 //  scanf("%d",&n);
-  n = argv[1][0];
+  n = atoi(argv[1]);
 
   while(i<n){
       if(n%i==0)

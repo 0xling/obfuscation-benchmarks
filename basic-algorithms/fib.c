@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include <time.h>
 
 int fib(int n) {
    int a = 1;
@@ -21,9 +20,8 @@ int main(int argc, char* argv[]) {
 //     abort();
 //  };
 //  long n = strtol(argv[1],NULL,10);
-  time_t t;
-  srand((unsigned) time(&t)); // seed rand()
-  int n = (int) argv[1][0];//4;//rand() % 10;
+  srand(0);
+  int n = atoi(argv[1]);//4;//rand() % 10;
   int f = fib(n);
-  printf("fib(%li)=%i\n",n,f);
+  printf("fib(%i)=%i\n",n,f);
 }

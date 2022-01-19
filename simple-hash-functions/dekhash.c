@@ -20,7 +20,7 @@ int main(int argc, char* argv[]) {
   
   unsigned int hash = DEKHash(str, strlen(str));
   
-  //printf("%x\n", hash);
+  printf("%x\n", hash);
   
   if (hash == 0xde4363b7)
 		printf("You win!\n");

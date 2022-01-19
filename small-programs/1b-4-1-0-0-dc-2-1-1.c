@@ -9,7 +9,7 @@ int main(int argc, char* argv[]) {
 		sum += i; 
 	}
 	
-	for (i = 1; i <= argv[1][0]; i++) {
+	for (i = 1; i <= atoi(argv[1]); i++) {
 		sum += sum; 
 	}
 	

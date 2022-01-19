@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 
 int main(int argc, char* argv[])
 {
@@ -8,10 +7,8 @@ int main(int argc, char* argv[])
   int n, n1, rem, num=0;
 //  printf("Enter a positive  integer: ");
 //  scanf("%d", &n);
-  //time_t t;
-  //srand((unsigned) time(&t)); // seed rand()
   //n = 33;//rand();
-  n = (int) argv[1][0];
+  n = atoi(argv[1]);
   n1=n;
   while(n1!=0)
   {

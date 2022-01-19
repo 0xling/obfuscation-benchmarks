@@ -6,7 +6,7 @@ int main(int argc, char* argv[]) {
 	int sum = 0;
 	
 	for (i = 0; i < 127; i++) {
-		for (j = 0; j < argv[1][0]; j++) {
+		for (j = 0; j < atoi(argv[1]); j++) {
 			sum += j; 
 		} 
 	}

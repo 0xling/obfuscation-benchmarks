@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include <stdlib.h>
 
 int main(int argc, char* argv[]){
 
@@ -10,8 +11,8 @@ int main(int argc, char* argv[]){
 //    scanf("%ld",&binary1);
 //    printf("Enter any second binary number: ");
 //    scanf("%ld",&binary2);
-   binary1 = (long int) argv[1][0];//1100010;
-   binary2 = (long int) argv[2][0];//1001101;
+   binary1 = atol(argv[1]);//1100010;
+   binary2 = atol(argv[2]);//1001101;
 
     while(binary1!=0||binary2!=0){
          sum[i++] =  (binary1 %10 + binary2 %10 + remainder ) % 2;

@@ -3,7 +3,7 @@
 
 int main(int argc, char* argv[]) {
 	unsigned char x;
-	unsigned char c = argv[1][0];
+	unsigned char c = atoi(argv[1]);
 	
 	if (c > 127)
 		x = c / 3;

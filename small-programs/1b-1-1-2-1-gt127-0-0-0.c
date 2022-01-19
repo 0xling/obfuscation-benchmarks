@@ -7,7 +7,7 @@ int main(int argc, char* argv[]) {
 		return 1;
 	}
 	
-	unsigned char c = argv[1][0];
+	unsigned char c = atoi(argv[1]);
 	if (c > 127)
 		printf("win\n");
 	else

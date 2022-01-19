@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 int binaryAddition(int,int);
 
@@ -12,8 +13,8 @@ int main(int argc, char* argv[]){
 //    scanf("%ld",&binary1);
 //    printf("Enter any second binary number: ");
 //    scanf("%ld",&binary2);
-    binary1 = (long int) argv[1][0];//1111;
-    binary2 = (long int) argv[2][0];//111;
+    binary1 = atol(argv[1]);//1111;
+    binary2 = atol(argv[2]);//111;
 
     while(binary2!=0){
          digit =  binary2 %10;

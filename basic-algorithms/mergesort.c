@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 #define MAX 50
 
 void mergeSort(int arr[],int low,int mid,int high);
@@ -16,9 +17,9 @@ int main(int argc, char* argv[]){
 //         scanf("%d",&merge[i]);
 //    }
     for(i=1;i<argc;i++)
-        merge[i-1] = argv[i][0];
+        merge[i-1] = atoi(argv[i]);
 
-    partition(merge,0,argc-1);
+    partition(merge,0,argc-2);
 
     printf("After merge sorting elements are: ");
     for(i=0;i<argc-1;i++){

@@ -20,7 +20,7 @@ int main(int argc, char* argv[]) {
   
   unsigned int hash = BPHash(str, strlen(str));
   
-  //printf("%x\n", hash);
+  printf("%x\n", hash);
   
   if (hash == 0x5bfaf2f9)
 		printf("You win!\n");

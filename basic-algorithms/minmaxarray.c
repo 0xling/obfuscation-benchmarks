@@ -1,4 +1,6 @@
 #include<stdio.h>
+#include<stdlib.h>
+
 int main(int argc, char* argv[]){
   if(argc < 11) return 1;
   int a[10],i,big,small;
@@ -10,7 +12,7 @@ int main(int argc, char* argv[]){
 //      scanf("%d",&a[i]);
 
   for(i=1;i<argc;i++)
-     a[i-1] = argv[i][0];
+     a[i-1] = atoi(argv[i]);
 
   big=a[0];
   for(i=1;i<argc-1;i++){

@@ -2,7 +2,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 
 int main(int argc, char* argv[])
 {
@@ -10,9 +9,8 @@ int main(int argc, char* argv[])
   int n, i, flag=0;
 //  printf("Enter a positive integer: ");
 //  scanf("%d",&n);
-  time_t t;
-  srand((unsigned) time(&t)); // seed rand()
-  n = argv[1][0];//rand() % 50;
+  srand(0);
+  n = atoi(argv[1]);//rand() % 50;
 
   for(i=2;i<=n/2;++i)
   {

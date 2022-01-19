@@ -23,7 +23,7 @@ int main(int argc, char* argv[]) {
   
   unsigned int hash = FNVHash(str, strlen(str));
   
-  //printf("%x\n", hash);
+  printf("%x\n", hash);
   
   if (hash == 0xee3c81d4)
 		printf("You win!\n");

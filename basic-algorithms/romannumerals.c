@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 void predigits(char c1,char c2);
 void postdigits(char c,int n);
@@ -13,7 +14,7 @@ int main(int argc, char* argv[]){
    
 //    printf("Enter any natural number: ");
 //    scanf("%d",&number);
-    number = argv[1][0];
+    number = atoi(argv[1]);
    
     if(number <= 0){
          printf("Invalid number");

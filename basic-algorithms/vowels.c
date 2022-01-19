@@ -1,17 +1,15 @@
 #include<stdio.h>
 #include <stdlib.h>
-#include <time.h>
 
 char *rand_string(char*, size_t);
 int main(int argc, char* argv[]){
     if (argc<2) return 1;
     char* line=argv[1];//[50]="grsxvbqwwirgygiikmmixflwibcasyewaqaqbxpkhycsrmwcfm";
     int i,v,c,ch,d,s,o;
-    time_t t;
     o=v=c=ch=d=s=0;
 //    printf("Enter a line of string:\n");
 //    gets(line);
-    srand((unsigned) time(&t));
+    srand(0);
     //rand_string(line, 50);
     for(i=0;line[i]!='\0';++i)
     {

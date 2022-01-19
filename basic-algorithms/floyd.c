@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
  
 int main(int argc, char* argv[])
 {
@@ -9,9 +8,8 @@ int main(int argc, char* argv[])
  
 //  printf("Enter the number of rows of Floyd's triangle to print\n");
 //  scanf("%d", &n);
-  time_t t;
-  srand((unsigned) time(&t)); // seed rand()
-  n = (int) argv[1][0];//rand() % 50;
+  srand(0);
+  n = atoi(argv[1]);//rand() % 50;
  
   for (i = 1; i <= n; i++)
   {

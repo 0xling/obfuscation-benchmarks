@@ -21,7 +21,7 @@ int main(int argc, char* argv[]) {
   
   unsigned int hash = JSHash(str, strlen(str));
   
-  //printf("%x\n", hash);
+  printf("%x\n", hash);
   
   if (hash == 0x120bdadd)
 		printf("You win!\n");

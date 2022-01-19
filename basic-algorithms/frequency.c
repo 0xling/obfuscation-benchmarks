@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 
 char *rand_string(char*,size_t);
 
@@ -9,8 +8,7 @@ int main(int argc, char* argv[]){
    int i,count=0;
 //   printf("Enter a string: ");
 //   gets(c);
-   time_t t;
-   srand((unsigned) time(&t));
+   srand(0);
    //rand_string(c, 50);
 
 //   printf("Enter a character to find frequency: ");

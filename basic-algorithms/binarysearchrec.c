@@ -1,4 +1,7 @@
 #include<stdio.h>
+#include<stdlib.h>
+int binary(int a[],int n,int m,int l,int u);
+
 int main(int argc, char* argv[]){
 
     if (argc < 12) return 1;
@@ -15,9 +18,9 @@ int main(int argc, char* argv[]){
 //    printf("Enter the number to be search: ");
 //    scanf("%d",&m);
     for (i=1;i<argc-1;i++)
-        a[i-1] = argv[i][0];
+        a[i-1] = atoi(argv[i]);
 
-    m = (int) argv[argc-1][0];//35;
+    m = atoi(argv[argc-1]);//35;
 
     l=0,u=argc-2;
     c=binary(a,argc-1,m,l,u);

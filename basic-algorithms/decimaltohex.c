@@ -1,4 +1,6 @@
 #include<stdio.h>
+#include<stdlib.h>
+
 int main(int argc, char* argv[]){
     if (argc < 2 ) return 1;
     long int decimalNumber,remainder,quotient;
@@ -7,7 +9,7 @@ int main(int argc, char* argv[]){
 
 //    printf("Enter any decimal number: ");
 //    scanf("%ld",&decimalNumber);
-    decimalNumber = (int) argv[1][0];
+    decimalNumber = atol(argv[1]);
 
     quotient = decimalNumber;
 
@@ -24,7 +26,7 @@ int main(int argc, char* argv[]){
       quotient = quotient / 16;
   }
 
-    printf("Equivalent hexadecimal value of decimal number %d: \n",decimalNumber);
+    printf("Equivalent hexadecimal value of decimal number %ld: \n",decimalNumber);
     for(j = i -1 ;j> 0;j--)
       printf("%c",hexadecimalNumber[j]);
 

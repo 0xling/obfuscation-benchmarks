@@ -2,7 +2,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 
 int main(int argc, char* argv[])
 {
@@ -10,10 +9,9 @@ int main(int argc, char* argv[])
   int num1, num2, max;
 //  printf("Enter two positive integers: ");
 //  scanf("%d %d", &num1, &num2);
-  time_t t;
-  srand((unsigned) time(&t)); // seed rand()
-  num1 = argv[1][0];//45;//rand() % 50;
-  num2 = argv[2][0];//9;//rand() % 50;
+  srand(0);
+  num1 = atoi(argv[1]);//45;//rand() % 50;
+  num2 = atoi(argv[2]);//9;//rand() % 50;
 
   max=(num1>num2) ? num1 : num2; /* maximum value is stored in variable max */
   while(1)                       /* Always true. */
