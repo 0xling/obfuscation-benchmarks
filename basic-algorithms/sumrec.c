@@ -19,6 +19,7 @@ int findsum(int n){
          r=n%10;
          s=s+r;
          findsum(n/10);
+         return s;
      }
      else
        return s;
